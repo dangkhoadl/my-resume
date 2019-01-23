@@ -1,0 +1,217 @@
+
+
+\documentclass[10pt]{article}
+\usepackage{fontspec}                       %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}   %other packages for formatting
+    \RequirePackage{color,graphicx}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{hyperref}                       %Setup hyperref package, and colours for links
+    \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+    \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\usepackage{vwcol}\setlength{\columnsep}{2.0cm}
+\usepackage[
+    paperheight=11.2in,
+    paperwidth=8.5in,
+    top=0.3in,
+    bottom=0.5in,
+    right=0.3in,
+    left=0.3in]{geometry}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+% Set col seperate length
+\setlength{\columnsep}{0.01cm}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+    \pagestyle{empty}       % non-numbered pages
+    \font\fb=''[cmr10]''    %for use with \LaTeX command
+
+    %--------------------TITLE-------------
+    \begin{multicols}{2}
+        \begin{flushleft}
+            \textbf{{\Huge Dang Le Dang Khoa }}
+        \end{flushleft}
+
+        \columnbreak
+
+        \begin{flushright}
+            \textsc (+65) 8698 0067 \\
+            \href{mailto:dangledangkhoa@gmail.com}{dangledangkhoa@gmail.com} \\
+            \href{https://github.com/dangkhoadl}{github.com/dangkhoadl} \\
+            \href{https://sg.linkedin.com/in/dangledangkhoa}{linkedin.com/in/dangledangkhoa}
+        \end{flushright}
+    \end{multicols}
+
+    \vspace{-5mm}
+
+    %--------------------SECTIONS-----------------------------------
+    % ------------------------- Section: Work Experience -------------------------------
+    \section{Work Experience (selected)}
+        \vspace{-5mm}
+
+        % --------------- Entry ----------------------------------
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Research Engineer}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{A*STAR - Institute for Infocomm Research}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{Not yet started}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Human Language Technology - Machine Translation}
+
+
+        % --------------- Entry ----------------------------------
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Master of Engineering Candidate}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Satellite Research Centre}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2016 - August 2018}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Implemented a design of Star Tracking Algorithms onto a Programmable System-on-a-chip system. }\\
+        $\bullet$ {Optimized the pattern recognition algorithm runtime by implementing the connected component labeling algorithm on parallel processors. Runtime is improved 64\% on average compared to traditional processor approach.} \\
+        $\bullet$ {Optimized and designed the pattern searching algorithm by applying k-ary tree data structure. Time complexity and runtime improved 31\%, but space complexity and memory increased 22\%.} \\
+        \emph{Languages/Technologies}: \textbf{C/C++, Python, Bash}\\
+        \emph{Source code}: \href{https://git.io/vpucY}{git.io/vpucY}
+
+
+    % ------------------------- Section: Projects -------------------------------
+    \section{Projects (selected)}
+        \vspace{-2mm}
+
+        % --------------- Entry ----------------------------------
+        \begin{center}
+            \textbf{Dota 2 Hero Recommendation}
+        \end{center}
+        $\bullet$ {Recommended game characters based on historical user data collected by Open Dota API.} \\
+        \emph{Languages/Technologies}: \textbf{Python, flask, pandas, numpy.} \\
+        \emph{Source code}: \href{https://git.io/fhV1q}{git.io/fhV1q}
+
+
+        % --------------- Entry ----------------------------------
+        \begin{center}
+            \textbf{Stock Price Predictor}
+        \end{center}
+        $\bullet$ {Predicted Time-series data by Linear Regression and ARIMA modeling approaches.} \\
+        $\bullet$ {Optimized Model's accuracy by 20\% by performing feature engineerings and hyper-parameters optimizations.} \\
+        $\bullet$ {Evaluated and Benchmarked models based on Root Mean Squared Error Metrics.} \\
+        \emph{Languages/Technologies}: \textbf{Python, pandas, numpy, matplotlib, sklearn.} \\
+        \emph{Source code}: \href{https://git.io/vpuCA}{git.io/vpuCA}
+
+
+        % --------------- Entry ----------------------------------
+        \begin{center}
+            \textbf{Neighborhood Map APIs}
+        \end{center}
+        $\bullet$ {Built a neighborhood map based on Google Map, Wikipedia, Foursquare APIs.} \\
+        $\bullet$ {Deployed and Configured Amazon Linux servers.} \\
+        \emph{Languages/Technologies}: \textbf{Javascript, Flask, Ajax, jQuery, Knockout.} \\
+        \emph{Source code}: \href{https://git.io/fhVMf}{git.io/fhVMf}
+
+
+    % ------------------------- Section: Education -------------------------------
+    \section{Education}
+        \vspace{-5mm}
+
+        % --------------- Entry ----------------------------------
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Master of Engineering}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Nanyang Technological University}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2015 - August 2018}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {School of Electrical and Electronics Engineering - Research.} \\
+        $\bullet$ \textsc{Thesis title}: Implementation of An Autonomous Star Recognition Algorithm using Hardware-Software Co-Processing Approach.
+
+
+        % --------------- Entry ----------------------------------
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Bachelor of Engineering}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Vietnam National University HCMC}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2010 - April 2015}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Ho Chi Minh City University of Technology - Electrical and Electronics Engineering - Second Upper Honour} \\
+        $\bullet$ {Major in Automation and Control engineering, minor in Robotics and Embedded System Design.} \\
+        $\bullet$ \textsc{Thesis title}: Applying of Fuzzy Logic Algorithm on Legged Locomotion Robot.
+
+    % ------------------------- Section: Certificates -------------------------------
+    \section{Certificates and Related Courseworks}
+        \vspace{-2mm}
+
+        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/AKFYZQ9QD8XH}{Data Structures and Algorithms Specialization.}} \\
+        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/ZUGAFYKCMQ79}{Machine Learning Specialization.}} \\
+        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/G25TQPPNXGW5}{Big Data Essentials: HDFS, MapReduce, and Spark RDD.}} \\
+        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/XN2B7T4AJX8C}{Introduction to Deep Learning.}} \\
+        $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/HK9JLR3N}{Machine Learning Engineer Nanodegree.}} \\
+        $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/KPSCQGZK}{Full Stack Web Developer Nanodegree.}} \\
+        $\bullet$ \textsc{MIT-6.041-Probabilistic Systems Analysis and Applied Probability} \\
+        $\bullet$ \textsc{UC Berkeley - CS162 - Operating Systems and Systems Programming} \\
+        $\bullet$ \textsc{UIUC - CS425 - Distributed Systems}
+
+\end{document}

@@ -1,0 +1,282 @@
+
+
+\documentclass[10pt]{article}
+\usepackage{fontspec}                       %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}   %other packages for formatting
+    \RequirePackage{color,graphicx}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{hyperref}                       %Setup hyperref package, and colours for links
+    \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+    \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\usepackage{vwcol}
+\usepackage[paperheight=12.2in,paperwidth=9in,top=0.3in,bottom=0.5in,right=0.3in,left=0.3in]{geometry}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+    \pagestyle{empty}       % non-numbered pages
+    \font\fb=''[cmr10]''    %for use with \LaTeX command
+
+    %--------------------TITLE-------------
+    \setlength{\columnsep}{1.0cm}
+    \begin{multicols}{3}
+        \begin{flushleft}
+            \textsc Jurong West, \\
+            \textsc Singapore, 640953 \\
+            \textsc (+65) 8698 0067
+        \end{flushleft}
+
+        \columnbreak
+
+        \begin{center}
+            \textbf{{\huge Dang Le Dang Khoa }}
+        \end{center}
+
+        \columnbreak
+
+        \begin{flushright}
+            \href{mailto:dangledangkhoa@gmail.com}{dangledangkhoa@gmail.com} \\
+            \href{https://github.com/dangkhoadl}{github.com/dangkhoadl} \\
+            \href{https://sg.linkedin.com/in/dangledangkhoa}{linkedin.com/in/dangledangkhoa}
+        \end{flushright}
+    \end{multicols}
+
+    \vspace{-5mm}
+
+    %--------------------SECTIONS-----------------------------------
+    %Section: Education
+    \section{Education}
+
+        \vspace{-5mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Master of Engineering}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Nanyang Technological University}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2015 - Present}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Electrical and Electronics Engineering - Research Program.} \\
+        $\bullet$ {Research on Pattern Recognition Algorithms and System implementation for Star Tracker.} \\
+        $\bullet$ \textsc{Thesis}: Implementation of An Autonomous Star Recognition Algorithm using Hardware-Software Co-Processing Approach.
+
+        % \vspace{-2mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Bachelor of Engineering}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Vietnam National University HCMC}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2010 - April 2015}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Ho Chi Minh City University of Technology - Electrical and Electronics Engineering - 2nd Class Upper Honour.} \\
+        $\bullet$ {Major in Automation and Control engineering, minor in Robotics and Embedded System Design.} \\
+        $\bullet$ \textsc{Thesis}: Applying of Fuzzy Logic Algorithm on Legged Locomotion Robot.
+
+    %Section: Technical Skills
+    \section{Languages, Technologies, and Skills}
+
+        \vspace{-2mm}
+
+        $\bullet$ \textbf{Experienced in}: \textsc{C/C++}, \textsc{Python}. \textbf{Familiar with}: \textsc{Bash}, \textsc{SQL}, \LaTeX, \textsc{CSS - HTML}, \textsc{JavaScript}. \\
+        $\bullet$ \textsc{Spark}, \textsc{Flask}, \textsc{PostgreSQL}, \textsc{Scipy stacks}, \textsc{Hive}, \textsc{hadoop}. \\
+        $\bullet$ \textsc{Data Structures - Algorithms}, \textsc{Problem Solving}, \textsc{Linux/Unix Operating System}, \textsc{System Programming}, \textsc{Machine Learning},\textsc{Big Data}.
+
+
+    %Section: Experience and Projects
+    \section{Project Experience}
+
+        \vspace{-5mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Master of Engineering Research}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Star Tracking System}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2015 - Present}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Implemented a design of Star Tracking Algorithms onto a Programmable System-on-a-chip system. }\\
+        $\bullet$ {Optimized the pattern recognition algorithm runtime by implementing the connected component labeling algorithm on parallel processors. Runtime is improved 64\% on average compared to traditional processor approach.} \\
+        $\bullet$ {Optimized and designed the pattern searching algorithm by applying k-ary tree data structure. Time complexity and runtime improved 31\%, but space complexity and memory increased 22\%.} \\
+        \textbf{Source code}: \href{https://git.io/vpucY}{git.io/vpucY}
+
+        % \vspace{-2mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Bachelor of Engineering Final Year Project}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Legged Locomotion Robot}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{June 2014 - January 2015}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Designed and built a 4 Legged Locomotion Robot - trajectory and path planning model.}\\
+        $\bullet$ {Developed a system that applies PID algorithm on the robot legging system.}\\
+        $\bullet$ {Implemented the Fuzzy Algorithm in C on the balancing system specialized for traversing on inclining terrains.} \\
+        $\bullet$ {Designed the sensor and controller software interfaces (step motor encoders, IMU, SPI, UART).} \\
+        \textbf{Source code}: \href{https://git.io/vpuCN}{git.io/vpuCN}
+
+
+        % \vspace{-2mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Machine learning Engineer Capstone}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Stock Price Predictor}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{March 2018 - April 2018}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Predicted Time-series data by Linear Regression and ARIMA modeling approaches.} \\
+        $\bullet$ {Optimized Model's accuracy by 20\% by performing feature engineerings and hyper-parameters optimizations.} \\
+        $\bullet$ {Evaluated and Benchmarked models based on Root Mean Squared Error Metrics.} \\
+        $\bullet$ {\textbf{Technologies}: pandas, numpy, matplotlib, sklearn.} \\
+        \textbf{Source code}: \href{https://git.io/vpulO}{git.io/vpulO}
+
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{FullStack Web Developer Capstone}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{Neighborhood Map APIs}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{September 2017 - October 2017}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Built a neighborhood map based on Google Map, Wikipedia, Foursquare APIs.} \\
+        $\bullet$ {Deployed and Configured Amazon Linux servers.} \\
+        $\bullet$ {\textbf{Technologies}: Flask, Ajax, jQuery, Knockout.} \\
+        \textbf{Source code}: \href{https://git.io/vpuCx}{git.io/vpuCx}
+
+        % \vspace{-2mm}
+
+        \begin{multicols}{3}
+            \begin{flushleft}
+                \textbf{Side Projects}
+            \end{flushleft}
+
+            \columnbreak
+
+            \begin{center}
+                \textbf{GitHub Projects}
+            \end{center}
+
+            \columnbreak
+
+            \begin{flushright}
+                \textbf{August 2010 - Present}
+            \end{flushright}
+        \end{multicols}
+
+        \vspace{-5mm}
+
+        $\bullet$ {Algorithm Handbook - Solved nearly 100 Google Code Jam problems - \textbf{Source code}: \href{https://git.io/vpuWf}{git.io/vpuWf}.} \\
+        $\bullet$ {Machine Learning projects  - \textbf{Source code}: \href{https://git.io/vpuWJ}{git.io/vpuWJ}.} \\
+        $\bullet$ {Big Data, Distributed System projects - \textbf{Source code}: \href{https://git.io/vpuWU}{git.io/vpuWU}.} \\
+        $\bullet$ {Robotics projects - \textbf{Source code}: \href{https://git.io/vpuWT}{git.io/vpuWT}.}
+
+
+    %Section: Certificates
+    \section{Certificates}
+
+    \vspace{-2mm}
+
+    $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/AKFYZQ9QD8XH}{Data Structures and Algorithms Specialization} - UC Sandiego, National Research University HSE} - \textbf{Certificate}: \href{https://bit.ly/2rebiVI}{bit.ly/2rebiVI}. \\
+    $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/ZUGAFYKCMQ79}{Machine Learning Specialization} - University of Washington} - \textbf{Certificate}: \href{https://bit.ly/2HJjTG9}{bit.ly/2HJjTG9}.\\
+    $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/G25TQPPNXGW5}{Big Data Essentials: HDFS, MapReduce, and Spark RDD} - Yandex} - \textbf{Certificate}: \href{https://bit.ly/2JMHNBr}{bit.ly/2JMHNBr}. \\
+    $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/XN2B7T4AJX8C}{Introduction to Deep Learning} - National Research University HSE} - \textbf{Certificate}: \href{https://bit.ly/2jnra44}{bit.ly/2jnra44}. \\
+    $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/HK9JLR3N}{Machine Learning Engineer Nanodegree}} - \textbf{Certificate}: \href{https://bit.ly/2jkFsSQ}{bit.ly/2jkFsSQ}. \\
+    $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/KPSCQGZK}{Full Stack Web Developer Nanodegree}} - \textbf{Certificate}: \href{https://bit.ly/2w2Z0EG}{bit.ly/2w2Z0EG}.
+
+    %Section: Honors and Awards
+    \section{Honors and Awards}
+
+    \vspace{-2mm}
+
+        $\bullet$ \textbf{Google Code Jam 2018} - Round 2 Qualifier - top 10\% among all candidates
+\end{document}
