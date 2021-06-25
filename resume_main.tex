@@ -11,12 +11,13 @@
     \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 \usepackage{vwcol}\setlength{\columnsep}{2.0cm}
 \usepackage[
-    paperheight=13.9in,
+    paperheight=10.5in,
     paperwidth=8.5in,
     top=0.3in,
     bottom=0.2in,
     right=0.3in,
     left=0.3in]{geometry}
+\usepackage{enumitem}
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
@@ -41,8 +42,8 @@
     \begin{multicols}{2}
         \begin{flushleft}
             \textbf{{\Huge Dang Le Dang Khoa }} \\
-            \vspace{3mm}
-            \emph{Language Proficiency:} \textbf{Python, C/C++, Bash}
+            \vspace{2mm}
+            \emph{Language Proficiency:} \textbf{Python, C/C++, Bash, SQL, Scala-Spark}
         \end{flushleft}
 
         \columnbreak
@@ -58,8 +59,8 @@
 
     %--------------------SECTIONS-----------------------------------
     % ------------------------- Section: Work Experience -------------------------------
-    % \vspace{-5mm}
-    \section{Work Experience (selected)}
+    \vspace{-5mm}
+    \section{Professional Experience (selected)}
         % \vspace{-5mm}
 
         % --------------- Entry ----------------------------------
@@ -82,12 +83,53 @@
         \end{multicols}
 
         \vspace{-5mm}
-        $\bullet$ {Train Automatic Recognition System (ASR) using kaldi (classical ASR Engine) and Espnet (state-of-the-art end-to-end ASR engine) for South-East Asia languages, improve Word-Error-Rate (WER) by 10\% on average.} \\
-        $\bullet$ {Handle audio data pipeline (for cleansing, model benchmarking, data quality evaluating) for commercial and Singapore government confidential projects in law, air traffic control domains.} \\
-        $\bullet$ {Solve denoising audio data problem by applying bi-LSTM DenseNet model.} \\
-        $\bullet$ {Optimize kaldi-based system and research on Embedding neural network for the speaker recognition task.} \\
-        \emph{Toolkits}: \textbf{kaldi, Espnet E2E} \\
-        \emph{Technologies}: \textbf{Pandas, Numpy, Pytorch}
+        \emph{Industry-based projects:}
+        \vspace{-2.5mm}
+
+        \begin{itemize}[noitemsep]
+        \item Malay Automatic-Speech-Recognition (ASR) - Core ASR Engine project
+        \setlist{nolistsep}
+            \begin{itemize}[noitemsep]
+                \item Train and maintain deep learning Speech-to-Text and language model, improve 10\% in terms of word-error-rate (WER) compared to the former production model.
+                \item Clean and maintain Malay language data, including audio, text, dictionary formats.
+            \end{itemize}
+        \item Air Traffic Control (ATC) project
+            \begin{itemize}[noitemsep]
+                \item Pre-process and prepare raw audio/text data for training.
+                \item Apply speech enhancement model to denoise audio data for other subsequence tasks:
+                    \begin{enumerate}[noitemsep]
+                        \item Enhance Voice activity detection (VAD).
+                        \item Enhance raw Audio quality for labeling task.
+                        \item Enhance output Audio quality to improve client listening experience.
+                    \end{enumerate}
+            \end{itemize}
+        \item Legal-domain project
+            \begin{itemize}[noitemsep]
+                \item Pre-process and prepare raw audio, text data for model training (remove bad quality audios, parse legal-specific documents to cleaned text data).
+                \item Benchmark and evaluate final production models.
+                \item Visualize model efficiency and data statistics to end-user.
+            \end{itemize}
+        \end{itemize}
+
+        \emph{Research-based projects:}
+        \vspace{-2.5mm}
+        \begin{itemize}[noitemsep]
+            \item Research on Speech enhancement deep learning model
+                \begin{itemize}[noitemsep]
+                    \item Implement bi-LSTM Densenet model and train with LibriSpeech, VoxCeleb, Aishell, MUSAN datasets, 
+                    \item Apply the model to denoise Air Traffic Control Audio data, improve noised audio quality by 25\% in terms of snr, pesq, and stoi.
+                \end{itemize}
+            \item Research on state-of-the-art transformer based Speech-to-Text technologies: Espnet, Facebook wav2letter
+        \end{itemize}
+
+        \emph{Others tasks:}
+        \vspace{-2.5mm}
+        \begin{itemize}[noitemsep]
+            \item Build and maintain training pipeline and docker templates for the team.
+            \item Train new staff and exchange experience on ASR engine, data wrangling \& collecting, and PyTorch framework topics.
+        \end{itemize}
+        \emph{Toolkits}: \textbf{kaldi, Espnet E2E, flashlight-wav2letter, Docker} \\
+        \emph{Technologies}: \textbf{Pandas, Numpy, PyTorch, Bash, C++}
 
 
         % --------------- Entry ----------------------------------
@@ -111,7 +153,7 @@
 
         \vspace{-5mm}
 
-        $\bullet$ {Implemented a design of Star Tracking Algorithms onto a Programmable System-on-a-chip system. }\\
+        $\bullet$ {Implemented a design of Star Tracking Algorithms onto a Programmable System-on-a-chip system. } \\
         $\bullet$ {Optimized the pattern recognition algorithm runtime by implementing the connected component labeling algorithm on parallel processors. Runtime is improved 64\% on average compared to traditional processor approach.} \\
         $\bullet$ {Optimized and designed the pattern searching algorithm by applying k-ary tree data structure. Time complexity and runtime improved 31\%, but space complexity and memory increased 22\%.} \\
         \emph{Source code}: \href{https://git.io/vpucY}{git.io/vpucY} \\
@@ -119,7 +161,7 @@
 
 
     % ------------------------- Section: Education -------------------------------
-    % \vspace{-2mm}
+    \vspace{2mm}
     \section{Education}
         % \vspace{-5mm}
 
@@ -174,32 +216,39 @@
         $\bullet$ \textsc{Thesis title}: Applying of Fuzzy Logic Algorithm on Legged Locomotion Robot.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     % ------------------------- Section: Projects -------------------------------
-    % \vspace{-2mm}
-    \section{Projects (selected)}
+    \vspace{2mm}
+    \section{Open-Source Projects (selected)}
         % \vspace{-2mm}
         % --------------- Entry ----------------------------------
-        \begin{center}
+        \begin{flushleft}
             \textbf{WER-in-CPP}
-        \end{center}
+        \end{flushleft}
+        \vspace{-1.5mm}
         $\bullet$ Develop an open-source API to calculate Word-Error-Rate for ASR project based on Minimum-Edit-Distance problem. \\
         $\bullet$ Develop new features compared to existing kaldi code: Provide WER-per-utterance utilizing upon dataset statistical analysis. \\    
             \emph{Technologies}: \textbf{C++} \\
-            \emph{Source code}: \href{https://github.com/dangkhoadl/WER-in-cpp}{https://github.com/dangkhoadl/WER-in-cpp}
+            \emph{Source code}: \href{https://github.com/dangkhoadl/WER-in-cpp}{https://github.com/dangkhoadl/WER-in-cpp} \\
 
         % --------------- Entry ----------------------------------
-        \begin{center}
+        \begin{flushleft}
             \textbf{Problem Solving}
-        \end{center}
+        \end{flushleft}
+        \vspace{-1.5mm}
         $\bullet$ Solve Computer Science and Competitive Programming Problems. \\
         	\emph{Source code}: \href{https://github.com/dangkhoadl/my-CS-Notebook}{https://github.com/dangkhoadl/my-CS-Notebook} \\
         $\bullet$ Solve Machine Learning Problems. \\
-        	\emph{Source code}: \href{https://github.com/dangkhoadl/my-Machine-Learning}{https://github.com/dangkhoadl/my-Machine-Learning}
+        	\emph{Source code}: \href{https://github.com/dangkhoadl/my-Machine-Learning}{https://github.com/dangkhoadl/my-Machine-Learning} \\
 
         % --------------- Entry ----------------------------------
-        \begin{center}
+        \begin{flushleft}
             \textbf{Stock Price Predictor}
-        \end{center}
+        \end{flushleft}
+        \vspace{-1.5mm}
         $\bullet$ {Predicted Stock Price data by Linear Regression and ARIMA modeling approaches.} \\
         $\bullet$ {Optimized Model's accuracy by 20\% by performing feature engineerings and hyper-parameters optimizations.} \\
         $\bullet$ {Evaluated and Backtested models based on Live Stock Price Simulator on MetaTrader4.} \\
@@ -207,38 +256,48 @@
             \hspace*{5mm} \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/K8F27A8BM58Q?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate}{Introduction to Financial Markets}} \\
             \hspace*{5mm} \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/34BTLCR3KZNR?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate}{Portfolio and Risk Management}} \\
         \emph{Technologies}: \textbf{pandas, numpy, matplotlib, sklearn} \\
-        \emph{Source code}: \href{https://git.io/vpuCA}{git.io/vpuCA}
+        \emph{Source code}: \href{https://git.io/vpuCA}{git.io/vpuCA} \\
 
 
         % --------------- Entry ----------------------------------
-        \begin{center}
+        \begin{flushleft}
             \textbf{Dota 2 Hero Recommender System}
-        \end{center}
+        \end{flushleft}
+        \vspace{-1.5mm}
         $\bullet$ {Recommended game characters based on historical user data collected by Open Dota API.} \\
         \emph{Technologies}: \textbf{flask, pandas, numpy} \\
         \emph{Source code}: \href{https://git.io/fhV1q}{git.io/fhV1q}
 
 
     % ------------------------- Section: Certificates -------------------------------
-    % \vspace{-2mm}
+    \vspace{2mm}
     \section{Certificates and Related Courseworks}
         % \vspace{-2mm}
 
-        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/AKFYZQ9QD8XH}{Data Structures and Algorithms Specialization}} \\
-        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/ZUGAFYKCMQ79}{Machine Learning Specialization}} \\
+        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/AKFYZQ9QD8XH}{Data Structures and Algorithms Specialization}}, \textsc{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/ZUGAFYKCMQ79}{Machine Learning Specialization}}, \textsc{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/N3D6C3DT8QAY?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate}{Mathematics for Machine Learning}}, \textsc{\href{https://www.coursera.org/account/accomplishments/certificate/XN2B7T4AJX8C}{Introduction to Deep Learning}}, \textsc{\href{https://www.coursera.org/account/accomplishments/certificate/G25TQPPNXGW5}{Big Data Essentials: HDFS, MapReduce, and Spark RDD}} \\
         $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/HK9JLR3N}{Machine Learning Engineer Nanodegree}} \\
-        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/N3D6C3DT8QAY?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate}{Mathematics for Machine Learning}} \\
-        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/XN2B7T4AJX8C}{Introduction to Deep Learning}} \\
-        $\bullet$ \textsc{Coursera - \href{https://www.coursera.org/account/accomplishments/certificate/G25TQPPNXGW5}{Big Data Essentials: HDFS, MapReduce, and Spark RDD}} \\
         % $\bullet$ \textsc{Udacity - \href{https://graduation.udacity.com/confirm/KPSCQGZK}{Full Stack Web Developer Nanodegree}} \\
         $\bullet$ \textsc{MIT-6.041-Probabilistic Systems Analysis and Applied Probability} \\
         $\bullet$ \textsc{UC Berkeley - CS162 - Operating Systems and Systems Programming} \\
         $\bullet$ \textsc{UIUC - CS425 - Distributed Systems}
 
     % ------------------------- Section: Competitions -------------------------------
-    % \vspace{-2mm}
+    \vspace{2mm}
     \section{Competition Achievements}
+        % --------------- Entry ----------------------------------
         % \vspace{-2mm}
-        $\bullet$ \textsc{Google Code Jam 2018 - Round 2 qualifier - Top 10\% Candidates}
+        \begin{flushleft}
+            \textbf{Google Code Jam 2018}
+        \end{flushleft}
+        \vspace{-1.5mm}
+        $\bullet$ An annual contest for algorithmic problem solving, hosted by Google \\
+        $\bullet$ Round 2 qualifier - Top 10\% Candidates \\
 
+        % --------------- Entry ----------------------------------
+        \begin{flushleft}
+            \textbf{ConferencingSpeech 2021 Challenge}
+        \end{flushleft}
+        \vspace{-1.5mm}
+        $\bullet$ A Challenge for Far-field Multi-Channel Speech Enhancement for Video Conferencing, hosted by Interspeech and Tencent Ethereal Audio Lab \\
+        $\bullet$ Member of I2R-ALI team - Top 10 ranking team
 \end{document}
