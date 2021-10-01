@@ -11,7 +11,7 @@
     \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 \usepackage{vwcol}\setlength{\columnsep}{2.0cm}
 \usepackage[
-    paperheight=10.5in,
+    paperheight=11.0in,
     paperwidth=8.5in,
     top=0.3in,
     bottom=0.2in,
@@ -83,17 +83,18 @@
         \end{multicols}
 
         \vspace{-5mm}
-        \emph{Industry-based projects:}
+        \emph{Speech-to-text engines:}
         \vspace{-2.5mm}
 
         \begin{itemize}[noitemsep]
-        \item Malay Automatic-Speech-Recognition (ASR) - Core ASR Engine project
+        \item Bahasa Malay Automatic-Speech-Recognition (ASR) - Core ASR Engine project
         \setlist{nolistsep}
             \begin{itemize}[noitemsep]
                 \item Train and maintain deep learning Speech-to-Text and language model, improve 10\% in terms of word-error-rate (WER) compared to the former production model.
                 \item Clean and maintain Malay language data, including audio, text, dictionary formats.
+                \item Explore industrial applications of state-of-the art transformer-based, end-to-end Speech-to-Text engines.
             \end{itemize}
-        \item Air Traffic Control (ATC) project
+        \item Air Traffic Control (ATC) ASR
             \begin{itemize}[noitemsep]
                 \item Pre-process and prepare raw audio/text data for training.
                 \item Apply speech enhancement model to denoise audio data for other subsequence tasks:
@@ -103,24 +104,33 @@
                         \item Enhance output Audio quality to improve client listening experience.
                     \end{enumerate}
             \end{itemize}
-        \item Legal-domain project
+        \item Legal-domain ASR
             \begin{itemize}[noitemsep]
                 \item Pre-process and prepare raw audio, text data for model training (remove bad quality audios, parse legal-specific documents to cleaned text data).
                 \item Benchmark and evaluate final production models.
                 \item Visualize model efficiency and data statistics to end-user.
             \end{itemize}
+            \item \emph{Toolkits}: \textbf{kaldi, Espnet, flashlight-wav2letter, Docker}
         \end{itemize}
 
-        \emph{Research-based projects:}
+
+        \emph{Natural Language Processing - Audio Analytics and Classifications:}
         \vspace{-2.5mm}
         \begin{itemize}[noitemsep]
-            \item Research on Speech enhancement deep learning model
+            \item Speech enhancement deep learning model
                 \begin{itemize}[noitemsep]
-                    \item Implement bi-LSTM Densenet model and train with LibriSpeech, VoxCeleb, Aishell, MUSAN datasets, 
+                    \item Implement bi-LSTM Densenet and U-net models.
+                    \item Train with LibriSpeech, VoxCeleb, Aishell, MUSAN datasets.
                     \item Apply the model to denoise Air Traffic Control Audio data, improve noised audio quality by 25\% in terms of snr, pesq, and stoi.
                 \end{itemize}
-            \item Research on state-of-the-art transformer based Speech-to-Text technologies: Espnet, Facebook wav2letter
+            \item Speech classification applications
+                \begin{itemize}[noitemsep]
+                    \item Train vector embedding and classifier to identify Covid-19 patients from coughing sound, resulting auc = 0.85.
+                    \item Train model to classify deep-faked audios from authentic audios.
+                \end{itemize}
+            \item \emph{Toolkits}: \textbf{PyTorch, XGBoost, Scipy stacks}
         \end{itemize}
+
 
         \emph{Others tasks:}
         \vspace{-2.5mm}
@@ -128,14 +138,11 @@
             \item Build and maintain training pipeline and docker templates for the team.
             \item Train new staff and exchange experience on ASR engine, data wrangling \& collecting, and PyTorch framework topics.
         \end{itemize}
-        \emph{Toolkits}: \textbf{kaldi, Espnet E2E, flashlight-wav2letter, Docker} \\
-        \emph{Technologies}: \textbf{Pandas, Numpy, PyTorch, Bash, C++}
-
 
         % --------------- Entry ----------------------------------
         \begin{multicols}{3}
             \begin{flushleft}
-                \textbf{Master of Engineering Candidate}
+                \textbf{Researcher}
             \end{flushleft}
 
             \columnbreak
