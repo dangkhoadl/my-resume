@@ -5,4 +5,4 @@ build:
 	xelatex $(SOURCE_MAIN).tex
 
 clean:
-	rm -rf $(SOURCE_MAIN).aux $(SOURCE_MAIN).log $(SOURCE_MAIN).out $(SOURCE_MAIN).synctex.gz 
+	find ./ \( -name "*.aux" -or -name "*.log" -or -name "*.out" -or -name "*.synctex.gz" \) -type f -delete
