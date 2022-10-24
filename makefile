@@ -1,5 +1,5 @@
 
-SOURCE_MAIN=resume_main
+SOURCE_MAIN=dangledangkhoa
 
 build:
 	xelatex $(SOURCE_MAIN).tex
