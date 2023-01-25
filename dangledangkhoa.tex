@@ -6,9 +6,20 @@
 \usepackage{multicol}
     \setlength{\columnsep}{0.5cm}
 \usepackage{titlesec}
-\usepackage{hyperref}                       %Setup hyperref package, and colours for links
+\usepackage{enumitem}
+\usepackage{fontawesome}
+
+% Hyperref package, colours for links
+\usepackage{hyperref}
+    % \definecolor{linkcolour}{rgb}{0,0.0,0.0}
     \definecolor{linkcolour}{rgb}{0,0.2,0.6}
-    \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+    \hypersetup{
+        colorlinks,breaklinks,
+        urlcolor=linkcolour, linkcolor=linkcolour}
+% Custome blackhref
+\newcommand{\blackhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
+
+% Paper size
 \usepackage{vwcol}\setlength{\columnsep}{-1.0cm}
 \usepackage[
     paperheight=14.9in,
@@ -17,9 +28,8 @@
     bottom=0.2in,
     right=0.3in,
     left=0.3in]{geometry}
-\usepackage{enumitem}
 
-%FONTS
+% FONTS
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Path=Fonts/,
     SmallCapsFont={Fontin-SmallCaps.otf},
@@ -48,10 +58,10 @@
         \columnbreak
 
         \begin{flushright}
-            \normalsize (+65) 8398 3951 \\
-            \href{mailto:dangledangkhoa@gmail.com}{dangledangkhoa@gmail.com} \\
-            \href{https://github.com/dangkhoadl}{github.com/dangkhoadl} \\
-            \href{https://sg.linkedin.com/in/dangledangkhoa}{linkedin.com/in/dangledangkhoa}
+            \normalsize (+65) 8398 3951 \faPhoneSquare \\
+            \blackhref{mailto:dangledangkhoa@gmail.com}{dangledangkhoa@gmail.com} \faEnvelopeSquare \\
+            \blackhref{https://github.com/dangkhoadl}{github.com/dangkhoadl} \faGithub \\
+            \blackhref{https://sg.linkedin.com/in/dangledangkhoa}{linkedin.com/in/dangledangkhoa} \faLinkedinSquare
         \end{flushright}
     \end{multicols}
 
@@ -93,7 +103,7 @@
         \vspace{-2.5mm}
         \begin{itemize}[noitemsep]
             \item Trained and maintained Bahasa Malay core Speech-to-Text engine and language model, improved Word-Error-Rate by 10\% from the baseline model.
-            \item Integrated and finetuned Singapore English Speech-to-Text engine into domain-specific services, including Legal, Healthcare, and Education. \href{https://www.straitstimes.com/singapore/courts-crime/state-courts-to-use-system-that-instantly-transcribes-court-proceedings}{Intelligence Court Transcription System} featured on Straitimes.
+            \item Integrated and finetuned Singapore English Speech-to-Text engine into domain-specific services, including Legal, Healthcare, and Education. Including \emph{Intelligence Court Transcription System} \blackhref{https://www.straitstimes.com/singapore/courts-crime/state-courts-to-use-system-that-instantly-transcribes-court-proceedings}{\faLink}.
             \item Transformed and augmented audio and text data for model training.
         \end{itemize}
 
@@ -102,8 +112,8 @@
         \begin{itemize}[noitemsep]
             \item Trained and integrated \emph{ECAPA-TDNN} deep learning model for speaker diarization service, meeting minute note-taking application.
             \item Trained \emph{U-net} audio enhancement model for Satellite-based VHF communication; performance improved by 3\% compared to RNN baseline model.
-            \item Modeled sentence embedding inference and logic backend for Vietnamese-voiced FAQ chatbot.
-            \item Contributed to other team-scaled projects: Sequence2Sequence with Attention and Transformer, Sentiment Analysis, Embedded Sound Classification.
+            \item Modeled sentence embedding inference and logic backend for \emph{Vietnamese-voiced FAQ chatbot}.
+            \item Contributed to other team-scaled projects: \emph{Sequence2Sequence with Attention}, \emph{Sentiment Analysis}, \emph{Embedded Sound Classification}.
         \end{itemize}
 
         % --------------- Entry ----------------------------------
@@ -147,7 +157,7 @@
         \begin{itemize}[noitemsep]
             \item Challenged for the detection of audio-visual fake media, a competition hosted by AI Singapore, sponsored by Singapore Press Holdings Ltd. with prize monies of up to SGD 700,000.
             \item Lead and contributed chief engineering work for \textbf{aasrali} team to compete with other 474 teams.
-            \item Ranked 6th on the final stage leaderboard - Top 1\% teams - \href{https://trustedmedia.aisingapore.org/competition/aisg/final-leaderboard/}{Final Round Leaderboard}.
+            \item Ranked 6th on the final stage leaderboard - Top 1\% teams - Final Round Leaderboard \blackhref{https://trustedmedia.aisingapore.org/competition/aisg/final-leaderboard/}{\faLink}.
         \end{itemize}
 
         % --------------- Entry ----------------------------------
@@ -200,8 +210,8 @@
         \begin{itemize}[noitemsep]
             \item School of Electrical and Electronics Engineering - Research.
             \item \textsc{Thesis title}: Implementation of An Autonomous Star Recognition Algorithm using Hardware-Software Co-Processing Approach.
-            \item \emph{Source code}: \href{https://git.io/vpucY}{git.io/vpucY}
-            \item \emph{Publication}: \href{https://doi.org/10.32657/10220/48371}{https://doi.org/10.32657/10220/48371}
+            \item \emph{Source code}: \href{https://github.com/dangkhoadl/Master-Thesis-Star-Tracking-System}{github.com/dangkhoadl/Master-Thesis-Star-Tracking-System}
+            \item \emph{Publication}: \href{https://doi.org/10.32657/10220/48371}{doi.org/10.32657/10220/48371}
         \end{itemize}
         \vspace{-2mm}
 
@@ -246,7 +256,7 @@
         \begin{itemize}[noitemsep]
             \item Developed an open-source API to calculate Word-Error-Rate for ASR project based on Minimum-Edit-Distance Dynamic Programming problem.
             \item Added the new features of text-based visualization and WER-per-utterance for statistical analysis.
-            \item \emph{Source code}: \href{https://github.com/dangkhoadl/WER-in-cpp}{https://github.com/dangkhoadl/WER-in-cpp}
+            \item \emph{Source code}: \href{https://github.com/dangkhoadl/WER-in-cpp}{github.com/dangkhoadl/WER-in-cpp}
         \end{itemize}
         \vspace{-2mm}
 
@@ -271,9 +281,9 @@
     \section{Certifications (selected)}
         % \vspace{-2mm}
     \begin{itemize}[noitemsep,leftmargin=*]
-        \item \textsc{Coursera - Discrete Optimization - } \href{https://www.coursera.org/account/accomplishments/verify/YXTNUBC3G3LX}{Certificate}
-        \item \textsc{Coursera - Machine Learning Specialization - } \href{https://www.coursera.org/account/accomplishments/specialization/3P6TZYWVJKHY}{Certificate}
-        \item \textsc{Coursera - Data Structures and Algorithms Specialization - } \href{https://www.coursera.org/account/accomplishments/specialization/AKFYZQ9QD8XH}{Certificate}
-        \item \textsc{Udacity - Machine Learning Engineer Nanodegree - } \href{https://graduation.udacity.com/confirm/HK9JLR3N}{Certificate}
+        \item \textsc{Coursera - Discrete Optimization - } \blackhref{https://www.coursera.org/account/accomplishments/verify/YXTNUBC3G3LX}{\faGraduationCap}
+        \item \textsc{Coursera - Machine Learning Specialization - } \blackhref{https://www.coursera.org/account/accomplishments/specialization/3P6TZYWVJKHY}{\faGraduationCap}
+        \item \textsc{Coursera - Data Structures and Algorithms Specialization - } \blackhref{https://www.coursera.org/account/accomplishments/specialization/AKFYZQ9QD8XH}{\faGraduationCap}
+        \item \textsc{Udacity - Machine Learning Engineer Nanodegree - } \blackhref{https://graduation.udacity.com/confirm/HK9JLR3N}{\faGraduationCap}
     \end{itemize}
 \end{document}
