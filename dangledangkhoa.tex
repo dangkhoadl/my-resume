@@ -16,14 +16,14 @@
     \hypersetup{
         colorlinks,breaklinks,
         urlcolor=linkcolour, linkcolor=linkcolour}
-% Custome blackhref
-\newcommand{\blackhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
+    % Custome blackhref
+    \newcommand{\blackhref}[3][black]{\href{#2}{\color{#1}{#3}}}
 
 % Paper size
-\usepackage{vwcol}\setlength{\columnsep}{-1.0cm}
+\usepackage{vwcol}\setlength{\columnsep}{-2.0cm} % This is the default columnsep for all pages
 \usepackage[
-    paperheight=14.9in,
-    paperwidth=9.0in,
+    paperheight=16.9in,
+    paperwidth=8.2in,
     top=0.3in,
     bottom=0.2in,
     right=0.3in,
@@ -39,9 +39,6 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
-% Set col seperate length
-\setlength{\columnsep}{0.01cm}
-
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
     \pagestyle{empty}       % non-numbered pages
@@ -50,9 +47,7 @@
     %--------------------TITLE-------------
     \begin{multicols}{2}
         \begin{flushleft}
-            \textbf{{\Huge Dang Le Dang Khoa }}
-            % \vspace{3mm}
-            % \emph{\large Language Proficiency:} \textbf{\large Python, C/C++, Bash/Linux}
+            \textbf{{\huge Dang Le Dang Khoa (Phillip)}}
         \end{flushleft}
 
         \columnbreak
@@ -65,225 +60,17 @@
         \end{flushright}
     \end{multicols}
 
-    %--------------------SECTIONS-----------------------------------
-     % ------------------------- Section: Work Experience -------------------------------
+    % ------------------------- Sections-------------------------------
     \vspace{-8mm}
-    \section{Technical Skills}
-    \begin{itemize}[noitemsep,leftmargin=*]
-        \item \textbf{Languages}: Python (Pandas, Matplotlib, Numpy, Scikit-learn, Pytorch), C/C++ (STL, Libtorch, OpenMP), Bash/Linux (shell scripting, awk, Dockerfile)
-        \item \textbf{Tools}: kaldi-asr, ESPnet-e2e, jupyter notebook, git, huggingface-transformer
-    \end{itemize}
-
-    % ------------------------- Section: Work Experience -------------------------------
+    \input{sections/0_Skills}
     \vspace{2mm}
-    \section{Experience (selected)}
-        \vspace{-2mm}
-
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{3}
-            \begin{flushleft}
-                \textbf{Senior Research Engineer}
-            \end{flushleft}
-
-            \columnbreak
-
-            \begin{center}
-                \textbf{Institute for Infocomm Research (I2R) - A*STAR}
-            \end{center}
-
-            \columnbreak
-
-            \begin{flushright}
-                \textbf{February 2020 - Present}
-            \end{flushright}
-        \end{multicols}
-
-        \vspace{-5mm}
-        \emph{Speech-to-text (Automatic Speech Recognition)}
-        \vspace{-2.5mm}
-        \begin{itemize}[noitemsep]
-            \item Trained and maintained Bahasa Malay core Speech-to-Text engine and language model, improved Word-Error-Rate by 10\% from the baseline model.
-            \item Integrated and finetuned Singapore English Speech-to-Text engine into domain-specific services, including Legal, Healthcare, and Education. Featured project: Intelligence Court Transcription System \blackhref{https://www.straitstimes.com/singapore/courts-crime/state-courts-to-use-system-that-instantly-transcribes-court-proceedings}{\faLink}.
-            \item Transformed and augmented audio and text data for model training.
-        \end{itemize}
-
-        \emph{Natural Language Processing - Audio,Text Analytics and Classifications}
-        \vspace{-2.5mm}
-        \begin{itemize}[noitemsep]
-            \item Trained and integrated \emph{ECAPA-TDNN} deep learning model for speaker diarization backend service, meeting minute note-taking application.
-            \item Trained \emph{U-net} audio enhancement model for Satellite-based VHF communication; performance improved by 3\% compared to the baseline model.
-            \item Modeled sentence embedding inference and logic backend for \emph{Vietnamese-voiced FAQ chatbot}.
-            \item Contributed to other team-scaled projects: \emph{Sequence2Sequence with Attention}, \emph{Sentiment Analysis}, \emph{Embedded Sound Classification}.
-        \end{itemize}
-
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{3}
-            \begin{flushleft}
-                \textbf{Researcher}
-            \end{flushleft}
-
-            \columnbreak
-
-            \begin{center}
-                \textbf{Satellite Research Centre}
-            \end{center}
-
-            \columnbreak
-
-            \begin{flushright}
-                \textbf{August 2016 - August 2018}
-            \end{flushright}
-        \end{multicols}
-
-        \vspace{-5mm}
-        % \begin{itemize}[noitemsep,leftmargin=*]
-        \begin{itemize}[noitemsep]
-            \item Implemented a novel Star Tracking Algorithm onto a Programmable System-on-a-chip for mini satellites.
-            \item Optimized the pattern recognition algorithm runtime, improved the accuracy by 5\% on average.
-            \item Designed a tree-based pattern searching algorithm, improved runtime processing by 25\%.
-        \end{itemize}
-
-    % ------------------------- Section: Competitions -------------------------------
+    \input{sections/1_Experience}
     \vspace{2mm}
-    \section{Honors \& awards (selected)}
-    \vspace{-2mm}
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{1}
-            \begin{flushleft}
-                \textbf{AI Singapore - Trusted Media Challenge 2021}
-            \end{flushleft}
-        \end{multicols}
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item Challenged for the detection of audio-visual fake media, a competition hosted by AI Singapore, sponsored by Singapore Press Holdings Ltd. with prize monies of up to SGD 700,000.
-            \item Lead and contributed chief engineering work for \textbf{aasrali} team to compete with other 474 teams.
-            \item Ranked 6th on the final stage leaderboard - Top 1\% teams - Final Round Leaderboard \blackhref{https://trustedmedia.aisingapore.org/competition/aisg/final-leaderboard/}{\faLink}.
-        \end{itemize}
-
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{1}
-            \begin{flushleft}
-                \textbf{ConferencingSpeech 2021 Challenge}
-            \end{flushleft}
-        \end{multicols}
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item Challenged for Far-field Multi-Channel Speech Enhancement for Video Conferencing, hosted by Interspeech and Tencent Ethereal Audio Lab.
-            \item Ranked in top 10 with I2R-ALI team.
-        \end{itemize}
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{1}
-            \begin{flushleft}
-                \textbf{Google Code Jam 2018}
-            \end{flushleft}
-        \end{multicols}
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-        \item Competed individually in the problem solving contest organized annually by Google with over 27,000 competitors.
-        \item Advanced to round 2 - Top 10\% candidates.
-        \end{itemize}
-
-    % ------------------------- Section: Education -------------------------------
+	\input{sections/2_Projects}
     \vspace{2mm}
-    \section{Education}
-        \vspace{-2mm}
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{3}
-            % \begin{flushleft}
-                \textbf{Master of Engineering}
-            % \end{flushleft}
-
-            \columnbreak
-
-            % \begin{center}
-                \textbf{Nanyang Technological University Singapore}
-            % \end{center}
-
-            \columnbreak
-
-            \begin{flushright}
-                \textbf{August 2015 - August 2018}
-            \end{flushright}
-        \end{multicols}
-
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item School of Electrical and Electronics Engineering - Research.
-            \item \textsc{Thesis title}: Implementation of An Autonomous Star Recognition Algorithm using Hardware-Software Co-Processing Approach.
-            \item \emph{Source code}: \href{https://github.com/dangkhoadl/Master-Thesis-Star-Tracking-System}{github.com/dangkhoadl/Master-Thesis-Star-Tracking-System}
-            \item \emph{Publication}: \href{https://doi.org/10.32657/10220/48371}{doi.org/10.32657/10220/48371}
-        \end{itemize}
-        \vspace{-2mm}
-
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{3}
-            \begin{flushleft}
-                \textbf{Bachelor of Engineering}
-            \end{flushleft}
-
-            \columnbreak
-
-            \begin{center}
-                \textbf{Vietnam National University - HCM, University of Technology}
-            \end{center}
-
-            \columnbreak
-
-            \begin{flushright}
-                \textbf{August 2010 - April 2015}
-            \end{flushright}
-        \end{multicols}
-
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item Major: Electrical and Electronics Engineering, Minor: Automation System Design. Second Upper Honour
-            \item \textsc{Thesis title}: Applying of Fuzzy Logic Algorithm on Legged Locomotion Robot.
-        \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % \newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % ------------------------- Section: Projects -------------------------------
+	\input{sections/3_Achievements}
     \vspace{2mm}
-    \section{Open-Source Projects (selected)}
-        \vspace{-2mm}
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{1}
-            \begin{flushleft}
-                \textbf{WER-in-CPP}
-            \end{flushleft}
-        \end{multicols}
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item Developed an open-source API to calculate Word-Error-Rate for ASR project based on Minimum-Edit-Distance Dynamic Programming problem.
-            \item Added the new features of text-based visualization and WER-per-utterance for statistical analysis.
-            \item \emph{Source code}: \href{https://github.com/dangkhoadl/WER-in-cpp}{github.com/dangkhoadl/WER-in-cpp}
-        \end{itemize}
-        \vspace{-2mm}
-
-        % --------------- Entry ----------------------------------
-        \begin{multicols}{1}
-            \begin{flushleft}
-                \textbf{Machine Learning and Algorithms Repositories}
-            \end{flushleft}
-        \end{multicols}
-        \vspace{-5mm}
-        \begin{itemize}[noitemsep]
-            \item Maintain GitHub repositories for personal note-taking, introducing and mentoring students to Data Structures - Algorithms, and Machine Learning.
-            \item Solved multiple problems in Computer science (Traveling Salesman, Stable Marriage Matching, etc.) and Machine Learning (Random Walks, AI bot playing the trending mobile game \emph{Lyto Different Color}).
-            \item \emph{Data structures and Algorithms implementation}: \href{https://github.com/dangkhoadl/my-CS-Notebook}{github.com/dangkhoadl/my-CS-Notebook}
-            \item \emph{Discrete Optimization Algorithms implementation}: \href{https://github.com/dangkhoadl/Coursera-Discrete-Optimization}{github.com/dangkhoadl/Coursera-Discrete-Optimization}
-            \item \emph{Machine Learning and Deep Learning models implementation}: \href{https://github.com/dangkhoadl/Machine-Learning-model-implementation}{github.com/dangkhoadl/Machine-Learning-model-implementation}
-        \end{itemize}
-        \vspace{-2mm}
-
-    % ------------------------- Section: Certificates -------------------------------
+	\input{sections/4_Education}
     \vspace{2mm}
-    \section{Certifications (selected)}
-        % \vspace{-2mm}
-    \begin{itemize}[noitemsep,leftmargin=*]
-        \item \textsc{Coursera - Discrete Optimization - } \blackhref{https://www.coursera.org/account/accomplishments/verify/YXTNUBC3G3LX}{\faGraduationCap}
-        \item \textsc{Coursera - Machine Learning Specialization - } \blackhref{https://www.coursera.org/account/accomplishments/specialization/3P6TZYWVJKHY}{\faGraduationCap}
-        \item \textsc{Coursera - Data Structures and Algorithms Specialization - } \blackhref{https://www.coursera.org/account/accomplishments/specialization/AKFYZQ9QD8XH}{\faGraduationCap}
-        \item \textsc{Udacity - Machine Learning Engineer Nanodegree - } \blackhref{https://graduation.udacity.com/confirm/HK9JLR3N}{\faGraduationCap}
-    \end{itemize}
+    \input{sections/5_Certifications}
 \end{document}
